@@ -33,7 +33,7 @@ Usage is simple.
 			authority = TestContentProvider.AUTHORITY, 
 			tableClass = TestTable.class, 
 			version = 1)
-	private class TestContentProvider extends EasyContentProvider
+	public class TestContentProvider extends EasyContentProvider
 	{
     		public static final String DATABASE = "testdb.db";
     		public static final String AUTHORITY = "com.netthreads.easycp.test";
