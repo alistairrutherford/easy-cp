@@ -29,13 +29,14 @@ Usage is simple.
 
 2) Define your Content Provider subclassing from EasyContentProvider.
 
-	@ContentProvider(database = TEST_DATABASE_NAME, 
-					authority = TestContentProvide.AUTHORITY, 
-					tableClass = TestTable.class, 
-					version = 1)
+	@ContentProvider(database = TestContentProvider.DATABASE, 
+			authority = TestContentProvider.AUTHORITY, 
+			tableClass = TestTable.class, 
+			version = 1)
 	private class TestContentProvider extends EasyContentProvider
 	{
-    public static final String AUTHORITY = "com.netthreads.easycp.test";
+    		public static final String DATABASE = "testdb.db";
+    		public static final String AUTHORITY = "com.netthreads.easycp.test";
 	
 		// Your provider.
 	}
