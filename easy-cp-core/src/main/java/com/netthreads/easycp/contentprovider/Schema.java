@@ -40,12 +40,12 @@ public class Schema
 	private static final String ERROR_NO_CONTENT_PROVIDER_ANNOTATION_PRESENT = "No @ContentProvider annotation present.";
 	private static final String ERROR_NO_RECOGNISED_FOR_COLUMN = "No type found for annotated column.";
 
-	private String databaseName;
-	private String authorityName;
-	private String tableName;
-	private Map<String, SQLLiteHelper.SQLiteType> columnDefinitions;
-	private int version;
-	private String idField;
+	private final String databaseName;
+	private final String authorityName;
+	private final String tableName;
+	private final Map<String, SQLLiteHelper.SQLiteType> columnDefinitions;
+	private final int version;
+	private final String idField;
 
 	/**
 	 * Construct table definition.

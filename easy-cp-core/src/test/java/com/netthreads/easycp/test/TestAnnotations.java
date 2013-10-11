@@ -44,12 +44,13 @@ public class TestAnnotations
 		BaseColumns._ID, "column1", "column2", "column3", "column4"
 	};
 	
+	/**
+	 * Note you do not need _ID field it is added for you.
+	 *
+	 */
 	@Table(name = TEST_TABLE_NAME)
 	private class TestTable implements BaseColumns
 	{
-		@Column(name = _ID)
-		private Long id;
-		
 		@Column(name = "column1")
 		private String column1;
 		
