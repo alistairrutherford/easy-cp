@@ -5,14 +5,11 @@ Easy CP - Makes creating an Android Content Provider a breeze.
 
 Usage is simple.
 
-1) Define your table.
+1) Define your table. Note the '_ID' column required by Content Providers is automatically added for you.
 
 	@Table(name = "test_table")
 	private class TestTable implements BaseColumns
 	{
-		@Column(name = _ID)
-		private Long id;
-		
 		@Column(name = "column1")
 		private String column1;
 		
