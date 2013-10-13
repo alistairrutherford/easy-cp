@@ -41,7 +41,7 @@ public class TestAnnotations
 	private static final String TEST_TABLE_NAME = "test_table";
 	private static final String[] COLUMN_NAMES =
 	{
-		BaseColumns._ID, "column1", "column2", "column3", "column4"
+		"column1", "column2", "column3", "column4"
 	};
 	
 	/**
