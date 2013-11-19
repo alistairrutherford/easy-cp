@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>easy-cp-core</artifactId>
-	<packaging>apklib</packaging>
+	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
