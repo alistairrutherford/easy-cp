@@ -45,5 +45,9 @@ Usage is simple.
             android:name="com.netthreads.easycp.test.TestContentProvider" >
         </provider>
 
+4) Example
 
+There is a nice example of this in use here https://github.com/alistairrutherford/traffic-ha-rss
+
+I have used this component to implement persistence in an application which downloads traffic events and has a RecyclerView list adapter build a view onto the database items.
 
