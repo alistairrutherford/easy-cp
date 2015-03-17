@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>easy-cp-core</artifactId>
-	<packaging>jar</packaging>
+	<packaging>aar</packaging>
 
 	<dependencies>
 		<dependency>
@@ -48,17 +48,21 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<groupId>com.simpligility.maven.plugins</groupId>
 				<artifactId>android-maven-plugin</artifactId>
-				<version>3.6.0</version>
+				<version>4.1.0</version>
+
+				<extensions>true</extensions>         
 				<configuration>
+					<sign>
+						<debug>false</debug>
+					</sign>
 					<sdk>
 						<path>${env.ANDROID_HOME}</path>
 						<platform>${platform.sdk}</platform>
 					</sdk>
 				</configuration>
-				<extensions>true</extensions>
-			</plugin>
+			</plugin>			
 		</plugins>
 
 	</build>
